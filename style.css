@@ -1,1 +1,120 @@
+/* Reset & général */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e6f0ff;
+  color: #003366;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Titre principal */
+header {
+  text-align: center;
+  background-color: #0094ff;
+  color: white;
+  padding: 20px 10px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-size: 1.8em;
+  font-weight: bold;
+  font-family: 'Cursive', serif;
+}
+
+header p {
+  font-size: 1em;
+  margin-top: 8px;
+}
+
+/* Photo */
+.photo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  gap: 12px;
+}
+
+.photo-container img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0094ff;
+}
+
+.insta-link {
+  padding: 8px 14px;
+  font-size: 0.95em;
+  background-color: #0094ff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* Sections */
+section {
+  margin-bottom: 25px;
+  padding: 0 10px;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  border-bottom: 2px dashed #0094ff;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: #0094ff;
+  color: white;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 15px 10px;
+  border-radius: 10px;
+}
+
+/* Mobile adaptation */
+@media (max-width: 480px) {
+  body {
+    padding: 15px 10px;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .insta-link {
+    font-size: 0.85em;
+    padding: 6px 10px;
+  }
+
+  footer {
+    font-size: 0.8em;
+    line-height: 1.4;
+  }
+}
