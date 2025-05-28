@@ -11,6 +11,7 @@
       color: #003366;
       margin: 0;
       padding: 0;
+      line-height: 1.6; /* Improved readability for body text */
     }
     header {
       background-color: #3399ff;
@@ -33,14 +34,14 @@
     }
     .photo-container {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column; /* Stack vertically by default for mobile-first approach */
       align-items: center;
       justify-content: center;
       gap: 20px;
       margin-bottom: 30px;
     }
     .photo {
-      width: 160px;
+      width: 120px; /* Adjusted default photo size for better mobile display */
       height: auto;
       border-radius: 50%;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
@@ -72,18 +73,21 @@
       color: #004080;
       border-bottom: 2px dashed #3399ff;
       font-size: 1.4em;
-      padding-bottom: 5px; /* Added for better spacing */
+      padding-bottom: 5px;
+      margin-top: 30px; /* Added margin for better section separation */
     }
     ul {
       padding-left: 20px;
       font-size: 1em;
       line-height: 1.6;
+      list-style-type: disc; /* Ensure bullet points are visible */
     }
     form {
       background-color: #dbeeff;
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-top: 25px; /* Added margin to separate from content */
     }
     label {
       display: block;
@@ -95,7 +99,7 @@
       border-radius: 8px;
       border: 1px solid #66aaff;
       margin-bottom: 15px;
-      box-sizing: border-box; /* Ensures padding doesn't add to the width */
+      box-sizing: border-box;
     }
     button {
       background-color: #3399ff;
@@ -105,6 +109,7 @@
       font-size: 1em;
       border-radius: 8px;
       cursor: pointer;
+      width: 100%; /* Full width button on mobile */
     }
     button:hover {
       background-color: #007acc;
@@ -115,73 +120,91 @@
       padding: 15px;
       font-size: 0.9em;
       color: white;
+      margin-top: 30px; /* Added margin for better separation from content */
     }
     footer a {
       color: white;
       text-decoration: underline;
     }
 
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
+    /* Media queries for responsiveness */
+
+    /* Small mobile devices (up to 480px) */
+    @media (max-width: 480px) {
       header h1 {
         font-size: 1.8em;
       }
       header p {
-        font-size: 1em;
-      }
-      .photo-container {
-        flex-direction: column; /* Stack photo and link on smaller screens */
+        font-size: 0.9em;
       }
       .photo {
-        width: 120px; /* Smaller photo on mobile */
+        width: 100px; /* Smaller photo */
       }
       .insta-link {
         font-size: 0.9em;
         padding: 8px 12px;
       }
       .container {
-        padding: 15px; /* Slightly less padding on smaller screens */
+        padding: 10px; /* Reduced padding */
       }
       h2 {
         font-size: 1.2em;
+        margin-top: 20px;
       }
       ul {
         font-size: 0.95em;
-      }
-      input, textarea, button {
-        font-size: 0.95em;
-      }
-    }
-
-    @media (max-width: 500px) {
-      header h1 {
-        font-size: 1.6em;
-      }
-      header p {
-        font-size: 0.9em;
-      }
-      .insta-link {
-        font-size: 0.85em;
-      }
-      .photo {
-        width: 100px; /* Even smaller photo on very small screens */
-      }
-      .container {
-        padding: 10px;
-      }
-      h2 {
-        font-size: 1.1em;
-      }
-      ul {
-        font-size: 0.9em;
         padding-left: 15px;
       }
       input, textarea, button {
-        font-size: 0.9em;
+        font-size: 0.95em;
         padding: 8px;
       }
       footer {
         font-size: 0.8em;
+        padding: 10px;
+        margin-top: 20px;
+      }
+    }
+
+    /* Tablets and larger phones (481px to 768px) */
+    @media (min-width: 481px) and (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+      header p {
+        font-size: 1em;
+      }
+      .photo {
+        width: 140px;
+      }
+      .insta-link {
+        font-size: 1em;
+      }
+      .container {
+        padding: 15px;
+      }
+      h2 {
+        font-size: 1.3em;
+      }
+      ul {
+        font-size: 1em;
+      }
+      input, textarea, button {
+        font-size: 1em;
+      }
+    }
+
+    /* Desktops and larger screens (769px and up) */
+    @media (min-width: 769px) {
+      .photo-container {
+        flex-direction: row; /* Layout photo and link side-by-side on larger screens */
+        justify-content: center;
+      }
+      .photo {
+        width: 160px; /* Original photo size for desktop */
+      }
+      button {
+        width: auto; /* Button width adjusts to content on desktop */
       }
     }
   </style>
