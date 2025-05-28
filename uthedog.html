@@ -12,49 +12,58 @@
     }
 
     body {
-      font-family: 'Comic Sans MS', cursive, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #e6f0ff;
       color: #003366;
-      line-height: 1.5;
-      padding: 10px;
-      text-align: center;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
     }
 
     header {
       background-color: #3399ff;
-      padding: 20px 10px;
+      padding: 25px 15px;
       color: white;
+      text-align: center;
+      border-radius: 12px;
+      margin-bottom: 25px;
     }
 
     header h1 {
-      font-size: 1.5em;
+      font-size: 2em;
+      font-weight: bold;
       margin-bottom: 5px;
+      font-family: cursive;
     }
 
     header p {
-      font-size: 0.9em;
+      font-size: 0.95em;
+      opacity: 0.9;
     }
 
     .photo {
-      width: 100px;
-      height: 100px;
+      width: 120px;
+      height: 120px;
       object-fit: cover;
       border-radius: 50%;
+      display: block;
       margin: 20px auto 10px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+      border: 3px solid #3399ff;
     }
 
     .insta-link {
       display: inline-flex;
       align-items: center;
       background-color: #1da1f2;
-      padding: 8px 12px;
-      border-radius: 6px;
+      padding: 8px 14px;
+      border-radius: 8px;
       color: white;
       text-decoration: none;
-      font-size: 0.85em;
+      font-size: 0.9em;
       font-weight: bold;
-      margin-bottom: 20px;
+      margin: 0 auto 25px;
     }
 
     .insta-icon {
@@ -64,84 +73,78 @@
     }
 
     section {
-      margin: 20px 0;
-      text-align: left;
+      margin: 25px 0;
     }
 
     h2 {
-      font-size: 1em;
+      font-size: 1.2em;
       color: #004080;
-      border-bottom: 1px dashed #3399ff;
-      padding-bottom: 4px;
-      margin-bottom: 10px;
+      border-bottom: 2px dashed #3399ff;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 12px;
+      font-family: Georgia, serif;
+      font-style: italic;
     }
 
     ul {
-      font-size: 0.9em;
+      font-size: 1em;
       padding-left: 20px;
+      margin-top: 8px;
     }
 
     ul li {
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
 
     footer {
       background-color: #3399ff;
       color: white;
-      font-size: 0.75em;
-      padding: 12px 10px;
-      margin-top: 30px;
+      font-size: 0.85em;
+      padding: 15px 10px;
+      margin-top: 40px;
+      border-radius: 10px;
+      text-align: center;
     }
 
     footer a {
       color: white;
       text-decoration: underline;
     }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 15px 10px;
+      }
+
+      header h1 {
+        font-size: 1.6em;
+      }
+
+      .photo {
+        width: 100px;
+        height: 100px;
+      }
+
+      .insta-link {
+        font-size: 0.85em;
+        padding: 6px 10px;
+      }
+
+      footer {
+        font-size: 0.75em;
+      }
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>U</h1>
-  <p>chasseuse de croquettes : pue de la geule : pue tout court</p>
+  <h1>U, le Chien Extraordinaire</h1>
+  <p>chasseuse de croquettes — pue de la gueule — pue tout court</p>
 </header>
 
 <img class="photo" src="chien.png" alt="Photo de U">
 
 <a href="https://www.instagram.com/u_the_dog?igsh=cW5lODNrcHB3a2pu" target="_blank" class="insta-link">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="insta-icon">
-  @u_the_dog
-</a>
-
-<section>
-  <h2>Compétences</h2>
-  <ul>
-    <li>Vol de chaussettes</li>
-    <li>Aboiement sur les intrus</li>
-    <li>Garde de la maison jour & nuit</li>
-    <li>Aspirateur sur pattes</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Expérience</h2>
-  <ul>
-    <li>Fait semblant de dormir en réunion</li>
-    <li>Retrouve les chaussettes perdues</li>
-    <li>Garde stratégique du jardin</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Formation</h2>
-  <ul>
-    <li>École des Chiens Très Sages — mention "Très Bon Toutou"</li>
-  </ul>
-</section>
-
-<footer>
-  <p>© 2025 CV de U — <a href="https://www.instagram.com/u_the_dog?igsh=cW5lODNrcHB3a2pu" target="_blank">Instagram</a></p>
-</footer>
-
-</body>
-</html>
+  <img src="ht
