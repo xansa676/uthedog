@@ -3,8 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="HandheldFriendly" content="true">
-  <meta name="MobileOptimized" content="320">
   <title>CV de U</title>
   <style>
     * {
@@ -17,158 +15,87 @@
       font-family: 'Comic Sans MS', cursive, sans-serif;
       background-color: #e6f0ff;
       color: #003366;
-      line-height: 1.6;
-      padding: 0 15px;
+      line-height: 1.5;
+      padding: 10px;
+      text-align: center;
     }
 
     header {
       background-color: #3399ff;
-      text-align: center;
-      padding: 25px 15px;
+      padding: 20px 10px;
       color: white;
     }
 
     header h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
+      font-size: 1.5em;
+      margin-bottom: 5px;
     }
 
     header p {
-      font-size: 1em;
-    }
-
-    .container {
-      max-width: 700px;
-      margin: auto;
-      padding: 20px 0;
-    }
-
-    .photo-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-      margin-bottom: 30px;
+      font-size: 0.9em;
     }
 
     .photo {
-      width: 120px;
-      height: 120px;
+      width: 100px;
+      height: 100px;
       object-fit: cover;
       border-radius: 50%;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      margin: 20px auto 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
     }
 
     .insta-link {
       display: inline-flex;
       align-items: center;
       background-color: #1da1f2;
-      padding: 10px 15px;
-      border-radius: 8px;
+      padding: 8px 12px;
+      border-radius: 6px;
       color: white;
       text-decoration: none;
+      font-size: 0.85em;
       font-weight: bold;
-      transition: background-color 0.3s;
-      font-size: 0.95em;
-    }
-
-    .insta-link:hover {
-      background-color: #0077cc;
+      margin-bottom: 20px;
     }
 
     .insta-icon {
-      width: 20px;
-      height: 20px;
-      margin-right: 8px;
+      width: 18px;
+      height: 18px;
+      margin-right: 6px;
     }
 
     section {
-      margin-bottom: 25px;
+      margin: 20px 0;
+      text-align: left;
     }
 
     h2 {
+      font-size: 1em;
       color: #004080;
-      border-bottom: 2px dashed #3399ff;
-      font-size: 1.2em;
-      padding-bottom: 6px;
-      margin-bottom: 15px;
+      border-bottom: 1px dashed #3399ff;
+      padding-bottom: 4px;
+      margin-bottom: 10px;
     }
 
     ul {
+      font-size: 0.9em;
       padding-left: 20px;
-      font-size: 0.95em;
     }
 
     ul li {
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
 
     footer {
       background-color: #3399ff;
-      text-align: center;
-      padding: 15px 10px;
-      font-size: 0.85em;
       color: white;
-      margin-top: 40px;
+      font-size: 0.75em;
+      padding: 12px 10px;
+      margin-top: 30px;
     }
 
     footer a {
       color: white;
       text-decoration: underline;
-    }
-
-    /* Styles pour grands écrans */
-    @media (min-width: 768px) {
-      header h1 {
-        font-size: 2.5em;
-      }
-      header p {
-        font-size: 1.1em;
-      }
-      .photo {
-        width: 160px;
-        height: 160px;
-      }
-      h2 {
-        font-size: 1.4em;
-      }
-      ul {
-        font-size: 1em;
-      }
-    }
-
-    /* Styles pour petits écrans */
-    @media (max-width: 480px) {
-      header h1 {
-        font-size: 1.6em;
-      }
-
-      header p {
-        font-size: 0.9em;
-      }
-
-      .photo {
-        width: 100px;
-        height: 100px;
-      }
-
-      h2 {
-        font-size: 1.1em;
-      }
-
-      ul {
-        font-size: 0.9em;
-      }
-
-      .insta-link {
-        font-size: 0.85em;
-        padding: 8px 12px;
-      }
-
-      .insta-icon {
-        width: 16px;
-        height: 16px;
-      }
     }
   </style>
 </head>
@@ -179,41 +106,38 @@
   <p>chasseuse de croquettes : pue de la geule : pue tout court</p>
 </header>
 
-<div class="container">
-  <div class="photo-container">
-    <img class="photo" src="chien.png" alt="Photo de U">
-    <a href="https://www.instagram.com/u_the_dog?igsh=cW5lODNrcHB3a2pu" target="_blank" class="insta-link">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="insta-icon">
-      @u_the_dog
-    </a>
-  </div>
+<img class="photo" src="chien.png" alt="Photo de U">
 
-  <section>
-    <h2>Compétences</h2>
-    <ul>
-      <li>Vol de chaussettes</li>
-      <li>Aboiement sur les intrus</li>
-      <li>Garde de la maison jour & nuit</li>
-      <li>Aspirateur sur pattes rien ne reste au sol</li>
-    </ul>
-  </section>
+<a href="https://www.instagram.com/u_the_dog?igsh=cW5lODNrcHB3a2pu" target="_blank" class="insta-link">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="insta-icon">
+  @u_the_dog
+</a>
 
-  <section>
-    <h2>Expérience</h2>
-    <ul>
-      <li>Capable de faire semblant de dormir pendant des réunions</li>
-      <li>Sait retrouver les chaussettes perdues</li>
-      <li>Garde du jardin et aboiement "stratégique"</li>
-    </ul>
-  </section>
+<section>
+  <h2>Compétences</h2>
+  <ul>
+    <li>Vol de chaussettes</li>
+    <li>Aboiement sur les intrus</li>
+    <li>Garde de la maison jour & nuit</li>
+    <li>Aspirateur sur pattes</li>
+  </ul>
+</section>
 
-  <section>
-    <h2>Formation</h2>
-    <ul>
-      <li>École Nationale des Chiens Très Sages — Diplôme avec mention "Très Bon Toutou"</li>
-    </ul>
-  </section>
-</div>
+<section>
+  <h2>Expérience</h2>
+  <ul>
+    <li>Fait semblant de dormir en réunion</li>
+    <li>Retrouve les chaussettes perdues</li>
+    <li>Garde stratégique du jardin</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Formation</h2>
+  <ul>
+    <li>École des Chiens Très Sages — mention "Très Bon Toutou"</li>
+  </ul>
+</section>
 
 <footer>
   <p>© 2025 CV de U — <a href="https://www.instagram.com/u_the_dog?igsh=cW5lODNrcHB3a2pu" target="_blank">Instagram</a></p>
