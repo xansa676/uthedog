@@ -5,72 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV de U</title>
   <style>
-    body {
-      font-family: 'Comic Sans MS', cursive, sans-serif; /* Added sans-serif as fallback */
-      background-color: #e6f0ff;
-      color: #003366;
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      line-height: 1.6; /* Improved readability */
-      -webkit-text-size-adjust: 100%; /* Prevent text zoom on orientation change */
-      box-sizing: border-box; /* Global box-sizing for consistent layout */
     }
-    *, *::before, *::after {
-      box-sizing: inherit; /* Inherit box-sizing */
+
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #e6f0ff;
+      color: #003366;
+      line-height: 1.6;
+      padding: 0 10px;
     }
 
     header {
       background-color: #3399ff;
       text-align: center;
-      padding: 20px 15px; /* Adjust padding for smaller screens */
+      padding: 25px 15px;
       color: white;
     }
+
     header h1 {
-      font-size: 2em; /* Slightly smaller for mobile */
-      margin: 0 0 8px; /* Adjusted margin */
+      font-size: 2em;
+      margin-bottom: 10px;
     }
+
     header p {
-      font-size: 1em; /* Adjusted size */
-      margin: 0;
+      font-size: 1em;
     }
 
     .container {
-      padding: 20px 15px; /* Consistent horizontal padding */
       max-width: 700px;
       margin: auto;
+      padding: 20px 0;
     }
 
     .photo-container {
       display: flex;
-      flex-direction: column; /* Stack elements vertically by default */
-      align-items: center; /* Center items horizontally */
-      gap: 20px;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
       margin-bottom: 30px;
     }
+
     .photo {
-      width: 120px; /* Optimal size for mobile */
-      height: 120px; /* Make it a perfect circle */
-      object-fit: cover; /* Ensures image covers the area without distortion */
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
       border-radius: 50%;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
+
     .insta-link {
-      display: flex;
+      display: inline-flex;
       align-items: center;
       background-color: #1da1f2;
       padding: 10px 15px;
-      border-radius: 10px;
+      border-radius: 8px;
       color: white;
       text-decoration: none;
       font-weight: bold;
       transition: background-color 0.3s;
-      font-size: 0.95em; /* Slightly smaller for mobile */
-      width: fit-content; /* Only take necessary width */
-      white-space: nowrap; /* Prevent wrapping */
+      font-size: 0.95em;
     }
+
     .insta-link:hover {
       background-color: #0077cc;
     }
+
     .insta-icon {
       width: 20px;
       height: 20px;
@@ -80,107 +83,55 @@
     section {
       margin-bottom: 25px;
     }
+
     h2 {
       color: #004080;
       border-bottom: 2px dashed #3399ff;
-      font-size: 1.3em; /* Adjusted for mobile readability */
-      padding-bottom: 8px; /* More padding for dashed line */
-      margin-top: 30px; /* Good spacing between sections */
-      margin-bottom: 15px; /* Spacing below heading */
-    }
-    ul {
-      padding-left: 20px; /* Standard list indent */
-      font-size: 0.95em; /* Slightly smaller font for lists */
-      line-height: 1.6;
-      list-style-type: disc; /* Ensure bullet points */
-    }
-    ul li {
-      margin-bottom: 8px; /* Spacing between list items */
+      font-size: 1.2em;
+      padding-bottom: 6px;
+      margin-bottom: 15px;
     }
 
-    /* Form (if you decide to add one later, this styling is ready) */
-    form {
-      background-color: #dbeeff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      margin-top: 30px; /* Spacing from previous section */
+    ul {
+      padding-left: 20px;
+      font-size: 0.95em;
     }
-    label {
-      display: block;
-      margin: 10px 0 5px;
-      font-weight: bold;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      border-radius: 8px;
-      border: 1px solid #66aaff;
-      margin-bottom: 15px;
-      font-size: 1em; /* Consistent font size */
-    }
-    button {
-      background-color: #3399ff;
-      color: white;
-      border: none;
-      padding: 12px 20px; /* Larger tap target */
-      font-size: 1em;
-      border-radius: 8px;
-      cursor: pointer;
-      width: 100%; /* Full width button for easy tapping on mobile */
-      transition: background-color 0.3s ease;
-    }
-    button:hover {
-      background-color: #007acc;
+
+    ul li {
+      margin-bottom: 10px;
     }
 
     footer {
       background-color: #3399ff;
       text-align: center;
-      padding: 15px;
-      font-size: 0.85em; /* Smaller font for footer */
+      padding: 15px 10px;
+      font-size: 0.85em;
       color: white;
-      margin-top: 40px; /* More space from content */
+      margin-top: 40px;
     }
+
     footer a {
       color: white;
       text-decoration: underline;
-      padding: 0 5px; /* Small padding around links */
     }
 
-    /* Media queries for larger screens (desktop layout) */
+    /* Responsive styles */
     @media (min-width: 768px) {
       header h1 {
-        font-size: 2.5em; /* Larger on desktop */
+        font-size: 2.5em;
       }
       header p {
         font-size: 1.1em;
       }
-      .container {
-        padding: 20px; /* Standard padding */
-      }
-      .photo-container {
-        flex-direction: row; /* Side-by-side on desktop */
-        justify-content: center;
-      }
       .photo {
-        width: 160px; /* Larger photo on desktop */
+        width: 160px;
         height: 160px;
       }
-      .insta-link {
-        font-size: 1em; /* Standard size */
-      }
       h2 {
-        font-size: 1.5em; /* Larger on desktop */
+        font-size: 1.4em;
       }
       ul {
-        font-size: 1em; /* Standard font size */
-      }
-      button {
-        width: auto; /* Button size adjusts to content */
-      }
-      footer {
-        font-size: 0.9em; /* Standard footer font */
+        font-size: 1em;
       }
     }
   </style>
@@ -193,7 +144,6 @@
 </header>
 
 <div class="container">
-
   <div class="photo-container">
     <img class="photo" src="chien.png" alt="Photo de U">
     <a href="https://www.instagram.com/u_the_dog?igsh=cW5lODNrcHB3a2pu" target="_blank" class="insta-link">
@@ -224,17 +174,4 @@
   <section>
     <h2>Formation</h2>
     <ul>
-      <li>École Nationale des Chiens Très Sages Diplôme avec mention "Très Bon Toutou"</li>
-    </ul>
-  </section>
-
-</div>
-
-<footer>
-  CV réalisé par U<br>
-  Contact : uthedog@gmail.com —  
-  <a href="https://www.instagram.com/u_the_dog?igsh=cW5lODNrcHB3a2pu" target="_blank">Insta de U</a>
-</footer>
-
-</body>
-</html>
+      <li>École Nationale des Chiens Très Sages — Diplôme avec mention "Très Bon Toutou"</li>
