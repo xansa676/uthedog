@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="MobileOptimized" content="320">
   <title>CV de U</title>
   <style>
     * {
@@ -16,7 +18,7 @@
       background-color: #e6f0ff;
       color: #003366;
       line-height: 1.6;
-      padding: 0 10px;
+      padding: 0 15px;
     }
 
     header {
@@ -115,7 +117,7 @@
       text-decoration: underline;
     }
 
-    /* Responsive styles */
+    /* Styles pour grands écrans */
     @media (min-width: 768px) {
       header h1 {
         font-size: 2.5em;
@@ -132,6 +134,40 @@
       }
       ul {
         font-size: 1em;
+      }
+    }
+
+    /* Styles pour petits écrans */
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.6em;
+      }
+
+      header p {
+        font-size: 0.9em;
+      }
+
+      .photo {
+        width: 100px;
+        height: 100px;
+      }
+
+      h2 {
+        font-size: 1.1em;
+      }
+
+      ul {
+        font-size: 0.9em;
+      }
+
+      .insta-link {
+        font-size: 0.85em;
+        padding: 8px 12px;
+      }
+
+      .insta-icon {
+        width: 16px;
+        height: 16px;
       }
     }
   </style>
@@ -175,3 +211,14 @@
     <h2>Formation</h2>
     <ul>
       <li>École Nationale des Chiens Très Sages — Diplôme avec mention "Très Bon Toutou"</li>
+    </ul>
+  </section>
+</div>
+
+<footer>
+  <p>© 2025 CV de U — <a href="https://www.instagram.com/u_the_dog?igsh=cW5lODNrcHB3a2pu" target="_blank">Instagram</a></p>
+</footer>
+
+</body>
+</html>
+
